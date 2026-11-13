@@ -105,7 +105,7 @@ Self-hosted, transparent, and community-audited tools engineered for decentraliz
 
 The table below ranks open-source remote workforce security tools sorted in **descending order by GitHub stargazers**:
 
-| Project / Repository 📦 | GitHub Stars_Count ⭐ | Primary Tech Stack 💻 | License 📜 | Deployment Model 🛠️ | Best Use Case 💡 |
+| Project / Repository 📦 | GitHub_Stars_Count ⭐ | Primary Tech Stack 💻 | License 📜 | Deployment Model 🛠️ | Best Use Case 💡 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **[juanfont/headscale](https://github.com/juanfont/headscale)** | [![GitHub_Stars](https://img.shields.io/github/stars/juanfont/headscale?style=social&color=white)](https://github.com/juanfont/headscale/stargazers) | Go / SQLite / Postgres | BSD-3-Clause | Self-Hosted Controller | Open-source, self-hosted implementation of the Tailscale coordination server |
 | **[tailscale/tailscale](https://github.com/tailscale/tailscale)** | [![GitHub_Stars](https://img.shields.io/github/stars/tailscale/tailscale?style=social&color=white)](https://github.com/tailscale/tailscale/stargazers) | Go / WireGuard | BSD-3-Clause | Cross-Platform Client / Core | Mesh VPN client connecting remote devices into an encrypted virtual private network |
