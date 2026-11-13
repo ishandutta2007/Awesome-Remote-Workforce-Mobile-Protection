@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#090d16; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; border-radius:12px; overflow:hidden;">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.25" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Subtle Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* Background Animated Pulses & Grids */
+    @keyframes pulseGlow {
+      0% { opacity: 0.15; transform: scale(0.95); }
+      50% { opacity: 0.35; transform: scale(1.05); }
+      100% { opacity: 0.15; transform: scale(0.95); }
+    }
+    @keyframes scanLine {
+      0% { transform: translateY(-100px); opacity: 0; }
+      50% { opacity: 0.4; }
+      100% { transform: translateY(400px); opacity: 0; }
+    }
+    @keyframes floatParticle {
+      0% { transform: translate(0, 0); opacity: 0.3; }
+      50% { transform: translate(15px, -20px); opacity: 0.8; }
+      100% { transform: translate(0, 0); opacity: 0.3; }
+    }
+    @keyframes signalWave {
+      0% { r: 6; opacity: 0.9; stroke-width: 2; }
+      100% { r: 38; opacity: 0; stroke-width: 0.5; }
+    }
+    @keyframes packetFlow {
+      0% { stroke-dashoffset: 240; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes cardFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .pulse-circle { animation: pulseGlow 6s infinite ease-in-out; transform-origin: center; }
+    .scan-beam { animation: scanLine 8s infinite linear; }
+    .particle-1 { animation: floatParticle 5s infinite ease-in-out; }
+    .particle-2 { animation: floatParticle 7s infinite ease-in-out reverse; }
+    .packet-line { stroke-dasharray: 8 12; animation: packetFlow 2.5s infinite linear; }
+    .wave-pulse-1 { animation: signalWave 3s infinite ease-out; }
+    .wave-pulse-2 { animation: signalWave 3s infinite ease-out 1.5s; }
+    .floating-card-1 { animation: cardFloat 6s ease-in-out infinite; }
+    .floating-card-2 { animation: cardFloat 7s ease-in-out infinite 1s; }
+    .floating-card-3 { animation: cardFloat 8s ease-in-out infinite 2s; }
+  </style>
+
+  <!-- Deep Canvas Background -->
+  <rect width="1200" height="360" fill="url(#bgGrad)" />
+
+  <!-- Technical Grid Pattern -->
+  <g opacity="0.12">
+    <path d="M 0 60 L 1200 60 M 0 120 L 1200 120 M 0 180 L 1200 180 M 0 240 L 1200 240 M 0 300 L 1200 300" stroke="#38bdf8" stroke-width="1" />
+    <path d="M 150 0 L 150 360 M 300 0 L 300 360 M 450 0 L 450 360 M 600 0 L 600 360 M 750 0 L 750 360 M 900 0 L 900 360 M 1050 0 L 1050 360" stroke="#38bdf8" stroke-width="1" />
+  </g>
+
+  <!-- Ambient Dynamic Aura Orbs (Layered in deep background) -->
+  <circle cx="200" cy="80" r="140" fill="#0284c7" opacity="0.18" filter="url(#softGlow)" class="pulse-circle" />
+  <circle cx="1020" cy="180" r="160" fill="#6366f1" opacity="0.2" filter="url(#softGlow)" class="pulse-circle" />
+  <circle cx="600" cy="300" r="180" fill="#a855f7" opacity="0.12" filter="url(#softGlow)" class="pulse-circle" />
+
+  <!-- Animated Glowing Network Streams in Background -->
+  <g opacity="0.45">
+    <path d="M 100 310 C 300 310, 400 260, 600 260 C 800 260, 950 310, 1100 310" fill="none" stroke="#0284c7" stroke-width="2" />
+    <path d="M 100 310 C 300 310, 400 260, 600 260 C 800 260, 950 310, 1100 310" fill="none" stroke="#38bdf8" stroke-width="2.5" class="packet-line" />
+    
+    <path d="M 150 280 C 350 280, 450 340, 700 340 C 900 340, 1000 280, 1120 280" fill="none" stroke="#4f46e5" stroke-width="1.5" />
+    <path d="M 150 280 C 350 280, 450 340, 700 340 C 900 340, 1000 280, 1120 280" fill="none" stroke="#818cf8" stroke-width="2" class="packet-line" />
+  </g>
+
+  <!-- Glowing Sensor Radar Nodes -->
+  <g transform="translate(140, 70)">
+    <circle cx="0" cy="0" r="5" fill="#38bdf8" />
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#38bdf8" class="wave-pulse-1" />
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#38bdf8" class="wave-pulse-2" />
+  </g>
+  <g transform="translate(1080, 90)">
+    <circle cx="0" cy="0" r="5" fill="#c084fc" />
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#c084fc" class="wave-pulse-1" />
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#c084fc" class="wave-pulse-2" />
+  </g>
+
+  <!-- Particles -->
+  <circle cx="280" cy="60" r="2.5" fill="#38bdf8" class="particle-1" />
+  <circle cx="480" cy="75" r="2" fill="#818cf8" class="particle-2" />
+  <circle cx="880" cy="55" r="3" fill="#c084fc" class="particle-1" />
+  <circle cx="950" cy="110" r="2" fill="#38bdf8" class="particle-2" />
+
+  <!-- ================= FOREGROUND CONTENT ================= -->
+
+  <!-- Top Category Pill / Badge -->
+  <g transform="translate(600, 52)">
+    <rect x="-140" y="-15" width="280" height="30" rx="15" fill="url(#badgeGrad)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.6" />
+    <circle cx="-115" cy="0" r="4.5" fill="#34d399" />
+    <circle cx="-115" cy="0" r="8" fill="none" stroke="#34d399" class="wave-pulse-1" />
+    <text x="-98" y="4.5" fill="#e0f2fe" font-size="12" font-weight="600" letter-spacing="1.2">ZERO TRUST • ZTNA • SASE • MTD</text>
+  </g>
+
+  <!-- Main Banner Title (High Contrast & Clear) -->
+  <text x="600" y="118" text-anchor="middle" fill="url(#primaryGrad)" font-size="34" font-weight="800" letter-spacing="-0.5">
+    AWESOME REMOTE WORKFORCE &amp; MOBILE PROTECTION
+  </text>
+
+  <!-- Subtitle (Clean, High Visibility) -->
+  <text x="600" y="152" text-anchor="middle" fill="#94a3b8" font-size="15" font-weight="400" letter-spacing="0.2">
+    Enterprise ZTNA, Identity-Aware Micro-Perimeters, SASE Architecture &amp; Mobile Threat Defense
+  </text>
+
+  <!-- Foreground Dynamic Feature Badges / Cards (Positioned in Bottom Half) -->
+  <g transform="translate(600, 230)">
+    
+    <!-- Card 1: Zero Trust Network Access -->
+    <g transform="translate(-360, 0)" class="floating-card-1">
+      <rect x="-130" y="-45" width="260" height="90" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" />
+      <rect x="-130" y="-45" width="260" height="90" rx="10" fill="none" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.3" />
+      <g transform="translate(-95, 0)">
+        <circle cx="0" cy="0" r="22" fill="#0369a1" fill-opacity="0.25" stroke="#38bdf8" stroke-width="1.2" />
+        <path d="M -8 2 L -2 8 L 8 -4" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      <text x="-60" y="-8" fill="#f8fafc" font-size="14" font-weight="700">ZTNA Architecture</text>
+      <text x="-60" y="12" fill="#94a3b8" font-size="11.5" font-weight="400">Zero Standing Privileges</text>
+      <text x="-60" y="27" fill="#38bdf8" font-size="10.5" font-weight="600">Continuous Context Check</text>
+    </g>
+
+    <!-- Card 2: Mobile Threat Defense (MTD) -->
+    <g transform="translate(0, 0)" class="floating-card-2">
+      <rect x="-130" y="-45" width="260" height="90" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" />
+      <rect x="-130" y="-45" width="260" height="90" rx="10" fill="none" stroke="#818cf8" stroke-width="1.2" stroke-opacity="0.4" />
+      <g transform="translate(-95, 0)">
+        <circle cx="0" cy="0" r="22" fill="#4338ca" fill-opacity="0.25" stroke="#818cf8" stroke-width="1.2" />
+        <rect x="-7" y="-11" width="14" height="22" rx="2.5" fill="none" stroke="#818cf8" stroke-width="1.8" />
+        <line x1="-3" y1="7" x2="3" y2="7" stroke="#818cf8" stroke-width="1.5" stroke-linecap="round" />
+      </g>
+      <text x="-60" y="-8" fill="#f8fafc" font-size="14" font-weight="700">Mobile Threat Defense</text>
+      <text x="-60" y="12" fill="#94a3b8" font-size="11.5" font-weight="400">iOS &amp; Android Hardening</text>
+      <text x="-60" y="27" fill="#818cf8" font-size="10.5" font-weight="600">Phishing &amp; Wi-Fi Protection</text>
+    </g>
+
+    <!-- Card 3: Open-Source Overlays & SASE -->
+    <g transform="translate(360, 0)" class="floating-card-3">
+      <rect x="-130" y="-45" width="260" height="90" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" />
+      <rect x="-130" y="-45" width="260" height="90" rx="10" fill="none" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.3" />
+      <g transform="translate(-95, 0)">
+        <circle cx="0" cy="0" r="22" fill="#7e22ce" fill-opacity="0.25" stroke="#c084fc" stroke-width="1.2" />
+        <path d="M 0 -10 L 8 4 L -8 4 Z" fill="none" stroke="#c084fc" stroke-width="1.8" stroke-linejoin="round" />
+      </g>
+      <text x="-60" y="-8" fill="#f8fafc" font-size="14" font-weight="700">Open-Source Overlays</text>
+      <text x="-60" y="12" fill="#94a3b8" font-size="11.5" font-weight="400">WireGuard &amp; Mesh Tunnels</text>
+      <text x="-60" y="27" fill="#c084fc" font-size="10.5" font-weight="600">Headscale, NetBird &amp; More</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <line x1="300" y1="318" x2="900" y2="318" stroke="url(#primaryGrad)" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+  <circle cx="600" cy="318" r="4" fill="#38bdf8" />
+  <circle cx="600" cy="318" r="10" fill="none" stroke="#38bdf8" class="wave-pulse-1" />
+</svg>
