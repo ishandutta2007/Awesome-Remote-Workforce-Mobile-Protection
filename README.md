@@ -4,10 +4,7 @@
 
 # 🛡️ Awesome Remote Workforce & Mobile Protection 📱💻
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Remote-Workforce-Mobile-Protection/pulls)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-Remote-Workforce-Mobile-Protection/graphs/commit-activity)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesmme"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Remote-Workforce-Mobile-Protection/pulls) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-Remote-Workforce-Mobile-Protection/graphs/commit-activity) <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 > 🌐 A meticulously curated list of top **Remote Workforce and Mobile Protection platforms** — featuring commercial SaaS/hosted Zero Trust Network Access (ZTNA) & Mobile Threat Defense (MTD) solutions, alongside self-hosted open-source software (OSS) alternatives for securing distributed employees, BYOD endpoints, and cloud infrastructure.
 > 
@@ -27,6 +24,8 @@
 - [📊 Feature Comparison at a Glance](#-feature-comparison-at-a-glance)
 - [🔍 SEO & Industry Taxonomy Keywords](#-seo--industry-taxonomy-keywords)
 - [🤝 Contributing](#-contributing)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
 - [📄 License](#-license)
 
 ---
@@ -220,6 +219,26 @@ Contributions are welcomed and actively encouraged! If you know of an outstandin
 1. **Repository Format:** Check that the open-source repository is actively maintained (active releases or commits within the past 12 months).
 2. **Details Required:** Include project name, direct URL, brief description, tech stack, license, and relevant architectural strengths.
 3. **Accuracy:** Keep pricing, free tier caps, and feature descriptions factual, objective, and verified against vendor documentation.
+
+---
+
+## 💖 Support
+
+Thank you for exploring and utilizing this curated guide to remote workforce and mobile protection! Maintaining and keeping this list accurate, up-to-date, and comprehensive takes dedicated time and continuous research.
+
+If this project added value to your architectural planning, research, or daily security workflow, please consider showing your support:
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork the repo** and contribute additions or updates.
+- 📢 **Share it** with fellow security practitioners, DevOps engineers, and colleagues.
+- ☕ **Buy me a coffee / Sponsor the project:** Support ongoing open-source maintenance and research directly via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+[![Sponsor ishandutta2007](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge&logo=github)](https://github.com/sponsors/ishandutta2007)
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Remote-Workforce-Mobile-Protection&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Remote-Workforce-Mobile-Protection&type=date&legend=top-left)
 
 ---
 
